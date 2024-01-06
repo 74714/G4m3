@@ -1,0 +1,239 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding-top: 70px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* Header Styles */
+
+header {
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* Navigation Styles */
+
+nav {
+    padding: 1rem 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-grow: 1;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.right-align {
+    margin-left: auto;
+}
+
+
+/* Dark Mode Toggle Styles */
+
+#toggleDarkMode {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Hero Section Styles */
+
+#hero {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 8rem 0;
+}
+
+#hero h2 {
+    margin: 0;
+    font-size: 2.5rem;
+    line-height: 1.5;
+}
+
+
+/* Button Styles */
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+/* Section Styles (About and Games) */
+
+#about,
+#games {
+    padding: 4rem 0 6rem;
+}
+
+
+/* Game Card Styles */
+
+.game-card {
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.game-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+/* Footer Styles */
+
+footer {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+
+/* Media Queries for Responsiveness */
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 0.5rem 0;
+    }
+    nav {
+        padding: 0.5rem 0;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav li {
+        margin: 0.5rem 0;
+    }
+}
+
+
+/* dark mode */
+
+.dark-mode {
+    background-color: #212121;
+    color: #ffffff;
+    /* text */
+}
+
+.dark-mode nav,
+.dark-mode #toggleDarkMode {
+    background-color: #30E3CA;
+    color: #0D7377;
+    /* moon */
+}
+
+.dark-mode nav a {
+    color: #0D7377;
+    /* list */
+}
+
+.dark-mode .btn {
+    color: #ffffff;
+}
+
+.dark-mode #hero h2 {
+    color: #77ffed;
+}
+
+.dark-mode footer {
+    color: #ffffffaf;
+}
+
+.dark-mode nav a:hover,
+.dark-mode .btn:hover {
+    background-color: #77ffed;
+    color: #084749;
+}
+
+.dark-mode #hero {
+    background-image: url('dark-hero-bg.jpg');
+}
+
+.dark-mode .game-card {
+    background-color: #77ffed;
+    color: #084749;
+    border-color: #0D7377;
+}
+
+
+/* Light Mode Colors */
+
+body {
+    background-color: #E4F9F5;
+    color: #40514E;
+}
+
+header,
+nav,
+#toggleDarkMode {
+    background-color: #30E3CA;
+    color: #40514E;
+}
+
+
+/* Styling for nav links */
+
+nav a {
+    color: #40514E;
+}
+
+.btn {
+    color: #000000;
+}
+
+#hero h2 {
+    color: #11999E;
+}
+
+footer {
+    color: #40514E;
+}
+
+nav a:hover,
+.btn:hover {
+    background-color: #11999E;
+    color: #ffffff;
+}
+
+#hero {
+    background-image: url('hero-bg.jpg');
+}
+
+.game-card {
+    background-color: #11999E;
+    color: #ffffff;
+    border-color: #11999E;
+}

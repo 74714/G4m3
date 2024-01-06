@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Awesome Gaming</title>
+</head>
+
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#games">Games</a></li>
+                    <li id="toggleDarkMode" class="right-align">
+                        <i class="dark-mode-icon fas fa-sun"></i>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+        document.getElementById('toggleDarkMode').addEventListener('click', function() {
+
+            document.body.classList.toggle('dark-mode');
+
+            const darkModeIcon = document.querySelector('.dark-mode-icon');
+            darkModeIcon.classList.toggle('fa-sun');
+            darkModeIcon.classList.toggle('fa-moon');
+        });
+    </script>
+
+
+    <section id="hero">
+        <div class="container">
+            <h2>Welcome to the World of Gaming</h2>
+            <p>some random text here </p>
+        </div>
+    </section>
+
+
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>
+                orem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.
+                Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque
+                nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia
+                aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+            </p>
+        </div>
+    </section>
+
+    <section id="games">
+        <div class="container">
+            <h2>Featured Games</h2>
+            <div class="game-card">
+                <img src="e6b1f0bb337b0a5b3cdd31a03c1975af.jpg" alt="Game 1" height="450px" width="60px">
+                <h3>game_1</h3>
+                <p>Embark on a journey through fantastical realms in this action-packed adventure game </p>
+            </div>
+            <div class="game-card">
+                <img src="b2d19cebc3d3601f20729dadab36fa2d.jpg" alt="Game 2" height="450px" width="60px">
+                <h3>game_2</h3>
+                <p>Join the battle for survival in a massive multiplayer showdown. Only the strongest will prevail!</p>
+            </div>
+            <a href="#gamessssss" class="btn">Explore More Games </a>
+
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Awesome Gaming. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
